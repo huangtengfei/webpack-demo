@@ -27,6 +27,9 @@ module.exports = {
 			test: /\.css$/,
 			loaders: ['style', 'css'],
 			include: APP_PATH
+		}, {
+			test: /\.(png|jpg)$/,
+			loader: 'url?limit=60000'
 		}]
 	},
 
